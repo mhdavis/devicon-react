@@ -1,5 +1,5 @@
 {
-  "name": "devicons-react",
+  "name": "devicon-react",
   "version": "1.0.0",
   "description": "an react implementations of the devicons font library",
   "main": "./src/components/index.js"
