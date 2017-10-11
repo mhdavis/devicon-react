@@ -1,7 +1,7 @@
 # devicon-react
 
 ## Introduction
-Devicon React is a Reaction implementation of the [Devicon](https://konpa.github.io/devicon/) (a library containing the logos of many programming tools technologies.)
+Devicon React is a Reaction implementation of [Devicon](https://konpa.github.io/devicon/) (a library containing the logos of many programming tools technologies.)
 
 Devicon React converts the font versions of the logos available `<Devicon />` components used in React!
 
