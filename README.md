@@ -45,7 +45,7 @@ const app = () => {
 |`iconClass` |String   | No      | See description below                                                            |
 
 ### name
-The value of this prop should be set to the desired icon.
+The value of this prop should be set to the desired icon. See [Devicon](https://konpa.github.io/devicon/) for available options.
 ```javascript
 <Devicon name="react" logoStyle="original"/>
 ```
