@@ -1,7 +1,8 @@
 {
   "name": "devicons-react",
   "version": "0.1.0",
-  "description": "an react implementations of the devicons font library"
+  "description": "an react implementations of the devicons font library",
+  "main": "./src/components/index.js"
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mhdavis/devicon-react.git"
