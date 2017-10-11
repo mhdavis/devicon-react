@@ -1,1 +1,3 @@
-export Devicon from "./components/Devicon";
+import Devicon from "./Devicon/Devicon";
+
+modules.exports = Devicon;
