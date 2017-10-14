@@ -1,6 +1,6 @@
 {
   "name": "devicon-react",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A react implementation of the devicons font library",
   "main": "dist/index.js",
   "scripts": {
