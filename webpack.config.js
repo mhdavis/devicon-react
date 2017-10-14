@@ -1,26 +1,27 @@
-var webpack = require('webpack');
 var path = require('path');
+var webpack = require('webpack');
 
 var config = {
-  devtool: 'source-map',
-  entry: __dirname + '/src/index.js',
+  entry: './src/index.js',
   output: {
-    path: path(__dirname, 'dist'),
-    filename: "index.js",
+    path: path.resolve(__dirname, 'dis'),
+    filename: 'index.js',
     libraryTarget: 'commonjs2'
   },
   module: {
-    loaders: [
+    rules: [
       {
-        loader: 'babel-loader',
-        test: /(\.jsx|\.js)$/,
-        exclude: /(node_modules|bower_components)/
+        test: /\.js$/,
+        include: path.resolve(__dirname, 'src'),
+        exclude: /(node_modules|bower_components|build)/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['env']
+          }
+        }
       }
     ]
-  },
-  resolve: {
-    root: path.resolve('./src'),
-    extensions: ['', '.js']
   },
   externals: {
     'react': 'commonjs react'
