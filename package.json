@@ -4,9 +4,7 @@
   "description": "A react implementation of the devicons font library",
   "main": "lib/Devicon.js",
   "scripts": {
-    "build": "babel lib -d build",
-    "lint": "eslint lib/**; exit 0",
-    "lint:watch": "esw -w lib/**",
+    "build": "babel dist -d build",
     "prepublish": "npm run build"
   },
   "repository": {
