@@ -1,27 +1,29 @@
 var webpack = require('webpack');
 var path = require('path');
-var libraryName = 'library';
-var outputFile = libraryName + '.js';
 
 var config = {
   devtool: 'source-map',
   entry: __dirname + '/src/index.js',
   output: {
-    path: __dirname + '/dist',
-    filename: "bundle.js",
+    path: path(__dirname, 'dist'),
+    filename: "index.js",
+    libraryTarget: 'commonjs2'
   },
   module: {
     loaders: [
       {
+        loader: 'babel-loader',
         test: /(\.jsx|\.js)$/,
         exclude: /(node_modules|bower_components)/
-        loader: 'babel-loader',
       }
     ]
   },
   resolve: {
     root: path.resolve('./src'),
     extensions: ['', '.js']
+  },
+  externals: {
+    'react': 'commonjs react'
   }
 };
 
