@@ -10,7 +10,7 @@ Similarly, the npm package [React Devicon](https://www.npmjs.com/package/react-d
 ## Installation
 Using NPM:
 
-`npm install 'devicon-react' --save`
+`npm install devicon-react --save`
 
 Using Yarn:
 
